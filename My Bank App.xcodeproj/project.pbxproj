@@ -14,7 +14,6 @@
 		324A025419CCD83F00D2E07A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324A025319CCD83F00D2E07A /* Images.xcassets */; };
 		324A025719CCD83F00D2E07A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 324A025519CCD83F00D2E07A /* LaunchScreen.xib */; };
 		324A026319CCD83F00D2E07A /* My_Bank_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 324A026219CCD83F00D2E07A /* My_Bank_AppTests.m */; };
-		324A026E19CCDBDC00D2E07A /* en_US_Bank_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 324A026D19CCDBDC00D2E07A /* en_US_Bank_Logo.png */; };
 		3257262B19D1E17C000F17E7 /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 3257262919D1E17C000F17E7 /* lock.png */; };
 		3257262C19D1E17C000F17E7 /* lock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3257262A19D1E17C000F17E7 /* lock@2x.png */; };
 		3257262F19D2017C000F17E7 /* Bank_Logo@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3257262D19D2017C000F17E7 /* Bank_Logo@1x.png */; };
@@ -24,8 +23,9 @@
 		3257263C19D21F31000F17E7 /* ChangePasswordTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3257263B19D21F31000F17E7 /* ChangePasswordTableViewController.m */; };
 		3257263F19D2392E000F17E7 /* AccountInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3257263E19D2392E000F17E7 /* AccountInformation.m */; };
 		3257264219D23E5E000F17E7 /* AccountTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3257264119D23E5E000F17E7 /* AccountTableViewController.m */; };
-		325DBC9919D3831A0087EF0D /* KeeperExtensionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 325DBC9819D3831A0087EF0D /* KeeperExtensionSDK.framework */; };
-		325DBC9A19D3831A0087EF0D /* KeeperExtensionSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 325DBC9819D3831A0087EF0D /* KeeperExtensionSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		32944F0119D38C5200E02114 /* en_US_Bank_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 32944F0019D38C5200E02114 /* en_US_Bank_Logo.png */; };
+		32944F0619D38D4500E02114 /* KeeperExtensionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32944F0519D38D4500E02114 /* KeeperExtensionSDK.framework */; };
+		32944F0719D38D4500E02114 /* KeeperExtensionSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32944F0519D38D4500E02114 /* KeeperExtensionSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,13 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		325DBC9B19D3831A0087EF0D /* Embed Frameworks */ = {
+		32944F0419D38CFD00E02114 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				325DBC9A19D3831A0087EF0D /* KeeperExtensionSDK.framework in Embed Frameworks */,
+				32944F0719D38D4500E02114 /* KeeperExtensionSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,7 +66,6 @@
 		324A025C19CCD83F00D2E07A /* My Bank AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My Bank AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		324A026119CCD83F00D2E07A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		324A026219CCD83F00D2E07A /* My_Bank_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = My_Bank_AppTests.m; sourceTree = "<group>"; };
-		324A026D19CCDBDC00D2E07A /* en_US_Bank_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en_US_Bank_Logo.png; path = "../../../Downloads/MyBankArtwork/Bank Logo/en_US/en_US_Bank_Logo.png"; sourceTree = "<group>"; };
 		3257262919D1E17C000F17E7 /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lock.png; path = Images/lock.png; sourceTree = "<group>"; };
 		3257262A19D1E17C000F17E7 /* lock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lock@2x.png"; path = "Images/lock@2x.png"; sourceTree = "<group>"; };
 		3257262D19D2017C000F17E7 /* Bank_Logo@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Bank_Logo@1x.png"; path = "Images/Bank_Logo@1x.png"; sourceTree = "<group>"; };
@@ -81,7 +80,8 @@
 		3257263E19D2392E000F17E7 /* AccountInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountInformation.m; sourceTree = "<group>"; };
 		3257264019D23E5E000F17E7 /* AccountTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountTableViewController.h; sourceTree = "<group>"; };
 		3257264119D23E5E000F17E7 /* AccountTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountTableViewController.m; sourceTree = "<group>"; };
-		325DBC9819D3831A0087EF0D /* KeeperExtensionSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeeperExtensionSDK.framework; path = "My Bank App/KeeperExtensionSDK.framework"; sourceTree = "<group>"; };
+		32944F0019D38C5200E02114 /* en_US_Bank_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en_US_Bank_Logo.png; path = Images/en_US_Bank_Logo.png; sourceTree = "<group>"; };
+		32944F0519D38D4500E02114 /* KeeperExtensionSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeeperExtensionSDK.framework; path = "My Bank App/KeeperExtensionSDK.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				325DBC9919D3831A0087EF0D /* KeeperExtensionSDK.framework in Frameworks */,
+				32944F0619D38D4500E02114 /* KeeperExtensionSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +106,7 @@
 		324A023A19CCD83F00D2E07A = {
 			isa = PBXGroup;
 			children = (
-				325DBC9819D3831A0087EF0D /* KeeperExtensionSDK.framework */,
+				32944F0519D38D4500E02114 /* KeeperExtensionSDK.framework */,
 				324A024519CCD83F00D2E07A /* My Bank App */,
 				324A025F19CCD83F00D2E07A /* My Bank AppTests */,
 				324A024419CCD83F00D2E07A /* Products */,
@@ -177,11 +177,11 @@
 		324A026C19CCDBC600D2E07A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				32944F0019D38C5200E02114 /* en_US_Bank_Logo.png */,
 				3257262D19D2017C000F17E7 /* Bank_Logo@1x.png */,
 				3257262E19D2017C000F17E7 /* Icon_Tab.png */,
 				3257262919D1E17C000F17E7 /* lock.png */,
 				3257262A19D1E17C000F17E7 /* lock@2x.png */,
-				324A026D19CCDBDC00D2E07A /* en_US_Bank_Logo.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -196,7 +196,7 @@
 				324A023F19CCD83F00D2E07A /* Sources */,
 				324A024019CCD83F00D2E07A /* Frameworks */,
 				324A024119CCD83F00D2E07A /* Resources */,
-				325DBC9B19D3831A0087EF0D /* Embed Frameworks */,
+				32944F0419D38CFD00E02114 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -270,11 +270,11 @@
 				324A025219CCD83F00D2E07A /* Main.storyboard in Resources */,
 				3257262C19D1E17C000F17E7 /* lock@2x.png in Resources */,
 				3257262F19D2017C000F17E7 /* Bank_Logo@1x.png in Resources */,
+				32944F0119D38C5200E02114 /* en_US_Bank_Logo.png in Resources */,
 				3257262B19D1E17C000F17E7 /* lock.png in Resources */,
 				324A025719CCD83F00D2E07A /* LaunchScreen.xib in Resources */,
 				324A025419CCD83F00D2E07A /* Images.xcassets in Resources */,
 				3257263019D2017C000F17E7 /* Icon_Tab.png in Resources */,
-				324A026E19CCDBDC00D2E07A /* en_US_Bank_Logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,7 +423,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/My Bank App";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/My",
 					Bank,
@@ -439,7 +440,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/My Bank App";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/My",
 					Bank,
