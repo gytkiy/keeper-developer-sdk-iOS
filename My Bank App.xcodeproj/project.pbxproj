@@ -26,6 +26,7 @@
 		32944F0119D38C5200E02114 /* en_US_Bank_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 32944F0019D38C5200E02114 /* en_US_Bank_Logo.png */; };
 		32944F0B19D3914300E02114 /* KeeperExtensionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32944F0A19D3914300E02114 /* KeeperExtensionSDK.framework */; };
 		32944F0C19D3914300E02114 /* KeeperExtensionSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32944F0A19D3914300E02114 /* KeeperExtensionSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		32944F0E19D3934700E02114 /* Keeper.images in Resources */ = {isa = PBXBuildFile; fileRef = 32944F0D19D3934700E02114 /* Keeper.images */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		3257264119D23E5E000F17E7 /* AccountTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountTableViewController.m; sourceTree = "<group>"; };
 		32944F0019D38C5200E02114 /* en_US_Bank_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en_US_Bank_Logo.png; path = Images/en_US_Bank_Logo.png; sourceTree = "<group>"; };
 		32944F0A19D3914300E02114 /* KeeperExtensionSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KeeperExtensionSDK.framework; sourceTree = "<group>"; };
+		32944F0D19D3934700E02114 /* Keeper.images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Keeper.images; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 		324A024519CCD83F00D2E07A /* My Bank App */ = {
 			isa = PBXGroup;
 			children = (
+				32944F0D19D3934700E02114 /* Keeper.images */,
 				324A026C19CCDBC600D2E07A /* Images */,
 				324A024619CCD83F00D2E07A /* Supporting Files */,
 				3257263719D21E20000F17E7 /* KeeperTableViewCell.h */,
@@ -272,6 +275,7 @@
 				3257262F19D2017C000F17E7 /* Bank_Logo@1x.png in Resources */,
 				32944F0119D38C5200E02114 /* en_US_Bank_Logo.png in Resources */,
 				3257262B19D1E17C000F17E7 /* lock.png in Resources */,
+				32944F0E19D3934700E02114 /* Keeper.images in Resources */,
 				324A025719CCD83F00D2E07A /* LaunchScreen.xib in Resources */,
 				324A025419CCD83F00D2E07A /* Images.xcassets in Resources */,
 				3257263019D2017C000F17E7 /* Icon_Tab.png in Resources */,
