@@ -84,6 +84,9 @@
 		32944F0019D38C5200E02114 /* en_US_Bank_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en_US_Bank_Logo.png; path = Images/en_US_Bank_Logo.png; sourceTree = "<group>"; };
 		32944F0A19D3914300E02114 /* KeeperExtensionSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KeeperExtensionSDK.framework; sourceTree = "<group>"; };
 		32944F0D19D3934700E02114 /* Keeper.images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Keeper.images; sourceTree = "<group>"; };
+		32944F1019D4865A00E02114 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		32944F1119D48BEF00E02114 /* KeeperLockActionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeeperLockActionDelegate.h; sourceTree = "<group>"; };
+		32944F1219D48C9100E02114 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 		324A024519CCD83F00D2E07A /* My Bank App */ = {
 			isa = PBXGroup;
 			children = (
+				32944F1219D48C9100E02114 /* README.md */,
+				32944F1019D4865A00E02114 /* Prefix.pch */,
 				32944F0D19D3934700E02114 /* Keeper.images */,
 				324A026C19CCDBC600D2E07A /* Images */,
 				324A024619CCD83F00D2E07A /* Supporting Files */,
@@ -147,6 +152,7 @@
 				3257263E19D2392E000F17E7 /* AccountInformation.m */,
 				3257264019D23E5E000F17E7 /* AccountTableViewController.h */,
 				3257264119D23E5E000F17E7 /* AccountTableViewController.m */,
+				32944F1119D48BEF00E02114 /* KeeperLockActionDelegate.h */,
 			);
 			path = "My Bank App";
 			sourceTree = "<group>";
@@ -429,6 +435,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "My Bank App/Prefix.pch";
 				INFOPLIST_FILE = "My Bank App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -446,6 +454,8 @@
 					"$(PROJECT_DIR)",
 				);
 				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "My Bank App/Prefix.pch";
 				INFOPLIST_FILE = "My Bank App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -1,0 +1,22 @@
+//
+//  Prefix.pch
+//  My Bank App
+//
+//  Created by Arthur Walasek on 9/25/14.
+//  Copyright (c) 2014 Callpod, Inc. All rights reserved.
+//
+
+#ifndef My_Bank_App_Prefix_pch
+#define My_Bank_App_Prefix_pch
+
+// The following are 2 different examples of how you could potentially use the Keeper icon to show to the user
+// that the page has Keeper FastFill capability.  In either case, the icon's appearance is controlled by
+// whether the user has Keeper (and the extension capability) installed and available.
+
+// This define will show the Keeper icon in each Text field
+//#define USE_KEEPER_TEXTFIELD_ICON
+
+// This define will show the Keeper icon as a tab on the right of the title of the screen
+#define USE_KEEPER_TAB_ICON
+
+#endif

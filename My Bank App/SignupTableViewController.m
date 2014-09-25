@@ -27,7 +27,11 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
+#ifdef USE_KEEPER_TAB_ICON
     [self.keeperTabBtn setHidden:![[KeeperSDK sharedExtension] isAppExtensionAvailable]];
+#else
+    [self.keeperTabBtn setHidden:TRUE];
+#endif
 }
 
 - (void)didReceiveMemoryWarning {

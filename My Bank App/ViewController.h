@@ -14,7 +14,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *txtPassword;
 @property (weak, nonatomic) IBOutlet UIButton *keeperLockBtn1;
 @property (weak, nonatomic) IBOutlet UIButton *keeperLockBtn2;
-@property (strong, nonatomic) IBOutlet UIView *keeperTabBtn;
+@property (weak, nonatomic) IBOutlet UIButton *keeperTabBtn;
 
 - (IBAction)lockAction:(id)sender;
 

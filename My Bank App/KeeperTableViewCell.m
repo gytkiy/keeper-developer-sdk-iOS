@@ -8,12 +8,15 @@
 
 #import "KeeperTableViewCell.h"
 #import <KeeperExtensionSDK/KeeperExtensionSDK.h>
+#import "KeeperLockActionDelegate.h"
 
 @implementation KeeperTableViewCell 
 
 - (void)awakeFromNib {
     // Initialization code
+#ifdef USE_KEEPER_TEXTFIELD_ICON
     [self.keeperLockBtn setHidden:![[KeeperSDK sharedExtension] isAppExtensionAvailable]];
+#endif
 }
 
 - (void)setUpCell
@@ -21,8 +24,9 @@
     [self.txtText setReturnKeyType:self.returnKeyType];
     self.txtText.delegate = self.delegate;
     
-    // Take this away to show the Keeper lock within the Text Edit fields
+#ifndef USE_KEEPER_TEXTFIELD_ICON
     [self.keeperLockBtn setHidden:TRUE];
+#endif
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

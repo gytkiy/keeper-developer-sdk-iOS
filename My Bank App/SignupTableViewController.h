@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KeeperLockActionDelegate.h"
 
-@interface SignupTableViewController : UITableViewController <UITextFieldDelegate>
+@interface SignupTableViewController : UITableViewController <UITextFieldDelegate, KeeperLockActionDelegate>
 
 @property (strong, nonatomic) NSString *firstname;
 @property (strong, nonatomic) NSString *lastname;

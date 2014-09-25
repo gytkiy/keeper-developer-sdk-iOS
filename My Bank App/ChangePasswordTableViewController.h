@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KeeperLockActionDelegate.h"
 
-@interface ChangePasswordTableViewController : UITableViewController <UITextFieldDelegate>
+@interface ChangePasswordTableViewController : UITableViewController <UITextFieldDelegate, KeeperLockActionDelegate>
 
 @property (strong, nonatomic) NSString *oldpassword;
 @property (strong, nonatomic) NSString *password1;

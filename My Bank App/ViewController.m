@@ -21,12 +21,19 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     // A couple of different ways to show the keeper lock and activate the extension
-//    [self.keeperLockBtn1 setHidden:![[KeeperSDK sharedExtension] isAppExtensionAvailable]];
-//    [self.keeperLockBtn2 setHidden:![[KeeperSDK sharedExtension] isAppExtensionAvailable]];
+#ifdef USE_KEEPER_TEXTFIELD_ICON
+    [self.keeperLockBtn1 setHidden:![[KeeperSDK sharedExtension] isAppExtensionAvailable]];
+    [self.keeperLockBtn2 setHidden:![[KeeperSDK sharedExtension] isAppExtensionAvailable]];
+#else
     [self.keeperLockBtn1 setHidden:TRUE];
     [self.keeperLockBtn2 setHidden:TRUE];
+#endif
     
+#ifdef USE_KEEPER_TAB_ICON
     [self.keeperTabBtn setHidden:![[KeeperSDK sharedExtension] isAppExtensionAvailable]];
+#else
+    [self.keeperTabBtn setHidden:TRUE];
+#endif
     
     self.txtUser.delegate = self;
     self.txtPassword.delegate = self;

@@ -303,7 +303,7 @@
                     <connections>
                         <outlet property="keeperLockBtn1" destination="Xs5-9h-DiS" id="oMl-7S-Goz"/>
                         <outlet property="keeperLockBtn2" destination="oB6-34-Fux" id="1B2-G1-DxS"/>
-                        <outlet property="keeperTabBtn" destination="8bC-Xf-vdC" id="jTP-CE-W9m"/>
+                        <outlet property="keeperTabBtn" destination="469-7c-fTm" id="qTB-KD-hiv"/>
                         <outlet property="txtPassword" destination="igF-J8-Wnq" id="wRy-e6-Ikr"/>
                         <outlet property="txtUser" destination="WN7-TS-ssW" id="ezH-yY-Itv"/>
                     </connections>
