@@ -19,8 +19,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [self.keeperLockBtn1 setHidden:![[KeeperSDK sharedExtension] isAppExtensionAvailable]];
-    [self.keeperLockBtn2 setHidden:![[KeeperSDK sharedExtension] isAppExtensionAvailable]];
+    
+    // A couple of different ways to show the keeper lock and activate the extension
+//    [self.keeperLockBtn1 setHidden:![[KeeperSDK sharedExtension] isAppExtensionAvailable]];
+//    [self.keeperLockBtn2 setHidden:![[KeeperSDK sharedExtension] isAppExtensionAvailable]];
+    [self.keeperLockBtn1 setHidden:TRUE];
+    [self.keeperLockBtn2 setHidden:TRUE];
+    
+    [self.keeperTabBtn setHidden:![[KeeperSDK sharedExtension] isAppExtensionAvailable]];
     
     self.txtUser.delegate = self;
     self.txtPassword.delegate = self;

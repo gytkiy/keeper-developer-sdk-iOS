@@ -103,12 +103,22 @@
                                     </subviews>
                                     <color key="backgroundColor" red="0.037783063710000002" green="0.20325999110000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </view>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Bank Change Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKy-Os-FMy">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Bank Security" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKy-Os-FMy">
                                     <rect key="frame" x="32" y="91" width="257" height="37"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                     <color key="textColor" red="0.037783063710000002" green="0.20325999110000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSG-7H-gbG">
+                                    <rect key="frame" x="280" y="90" width="40" height="40"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <state key="normal" image="Icon_Tab.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="keeperAction:" destination="NMV-Bl-dOR" eventType="touchUpInside" id="Nak-OO-Jku"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" red="0.91550611410000005" green="0.91550611410000005" blue="0.91550611410000005" alpha="1" colorSpace="calibratedRGB"/>
                         </view>
@@ -184,6 +194,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="keeperTabBtn" destination="gSG-7H-gbG" id="aDl-Os-wOo"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h4y-UF-9js" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -272,6 +285,16 @@
                                     <segue destination="5Df-0w-4zQ" kind="modal" id="eqk-He-dxq"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="469-7c-fTm">
+                                <rect key="frame" x="280" y="110" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="Icon_Tab.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="lockAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AUN-t8-JW0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.91550611413043481" green="0.91550611413043481" blue="0.91550611413043481" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -280,6 +303,7 @@
                     <connections>
                         <outlet property="keeperLockBtn1" destination="Xs5-9h-DiS" id="oMl-7S-Goz"/>
                         <outlet property="keeperLockBtn2" destination="oB6-34-Fux" id="1B2-G1-DxS"/>
+                        <outlet property="keeperTabBtn" destination="8bC-Xf-vdC" id="jTP-CE-W9m"/>
                         <outlet property="txtPassword" destination="igF-J8-Wnq" id="wRy-e6-Ikr"/>
                         <outlet property="txtUser" destination="WN7-TS-ssW" id="ezH-yY-Itv"/>
                     </connections>
@@ -335,6 +359,16 @@
                                     <color key="textColor" red="0.037783063710000002" green="0.20325999110000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TlO-4u-iJA">
+                                    <rect key="frame" x="280" y="90" width="40" height="40"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <state key="normal" image="Icon_Tab.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="keeperAction:" destination="juA-H1-6LK" eventType="touchUpInside" id="6yL-qX-iXP"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" red="0.91550611410000005" green="0.91550611410000005" blue="0.91550611410000005" alpha="1" colorSpace="calibratedRGB"/>
                         </view>
@@ -410,6 +444,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="keeperTabBtn" destination="TlO-4u-iJA" id="8qc-PE-Vqc"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lXM-eb-EBi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -418,6 +455,7 @@
     </scenes>
     <resources>
         <image name="Bank_Logo.png" width="144" height="134"/>
+        <image name="Icon_Tab.png" width="80" height="80"/>
         <image name="lock.png" width="27" height="28"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

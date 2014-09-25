@@ -20,6 +20,9 @@
 {
     [self.txtText setReturnKeyType:self.returnKeyType];
     self.txtText.delegate = self.delegate;
+    
+    // Take this away to show the Keeper lock within the Text Edit fields
+    [self.keeperLockBtn setHidden:TRUE];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

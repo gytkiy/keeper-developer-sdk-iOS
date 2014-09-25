@@ -14,9 +14,11 @@
 @property (strong, nonatomic) NSString *lastname;
 @property (strong, nonatomic) NSString *email;
 @property (strong, nonatomic) NSString *password;
+@property (weak, nonatomic) IBOutlet UIButton *keeperTabBtn;
 
 
 - (IBAction)cancelAction:(id)sender;
 - (IBAction)registerAction:(id)sender;
+- (IBAction)keeperAction:(id)sender;
 
 @end

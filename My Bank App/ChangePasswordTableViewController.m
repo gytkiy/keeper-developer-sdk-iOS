@@ -24,6 +24,7 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self.keeperTabBtn setHidden:![[KeeperSDK sharedExtension] isAppExtensionAvailable]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -70,8 +71,12 @@
         }
     }
     
+    cell.txtText.tag = indexPath.row;
     cell.delegate = self;
+    cell.returnKeyType = UIReturnKeyDone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    [cell setUpCell];
     
     return cell;
 }
@@ -155,6 +160,10 @@
     [alert addAction:dismissAction];
     [self presentViewController:alert animated:YES completion:nil];
     return;
+}
+
+- (IBAction)keeperAction:(id)sender {
+    [self keeperLockAction];
 }
 
 - (void)keeperLockAction {
