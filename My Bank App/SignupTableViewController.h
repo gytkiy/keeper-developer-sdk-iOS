@@ -16,7 +16,6 @@
 @property (strong, nonatomic) NSString *email;
 @property (strong, nonatomic) NSString *password;
 @property (weak, nonatomic) IBOutlet UIButton *keeperTabBtn;
-@property (weak, nonatomic) IBOutlet UIView *headerView;
 
 
 - (IBAction)cancelAction:(id)sender;
