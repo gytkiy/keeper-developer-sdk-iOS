@@ -10,7 +10,7 @@
 #define My_Bank_App_KeeperLockActionDelegate_h
 
 @protocol KeeperLockActionDelegate <NSObject>
-- (void)keeperLockAction;
+- (void)keeperLockAction:(id)sender;
 @end
 
 #endif

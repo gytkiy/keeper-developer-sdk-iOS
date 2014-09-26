@@ -37,8 +37,8 @@
 
 - (IBAction)keeperLockAction:(id)sender {
     if (self.delegate) {
-        if ([self.delegate respondsToSelector:@selector(keeperLockAction)]) {
-            [self.delegate performSelector:@selector(keeperLockAction)];
+        if ([self.delegate respondsToSelector:@selector(keeperLockAction:)]) {
+            [self.delegate performSelector:@selector(keeperLockAction:) withObject:sender];
         }
     }
 }

@@ -184,10 +184,10 @@
 }
 
 - (IBAction)keeperAction:(id)sender {
-    [self keeperLockAction];
+    [self keeperLockAction:sender];
 }
 
-- (void)keeperLockAction {
+- (void)keeperLockAction:(id)sender {
     NSDictionary *newLoginDetails = @{
                                       AppExtensionTitleKey: @"My Bank Registration",
                                       AppExtensionUsernameKey: self.email ? : @"",
@@ -209,7 +209,7 @@
     
     __weak typeof (self) miniMe = self;
     
-    [[KeeperSDK sharedExtension] storeLoginForURLString:@"http://www.my-bank-website.com" loginDetails:newLoginDetails passwordGenerationOptions:passwordGenerationOptions forViewController:self sender:self completion:^(NSDictionary *loginDict, NSError *error) {
+    [[KeeperSDK sharedExtension] storeLoginForURLString:@"http://www.my-bank-website.com" loginDetails:newLoginDetails passwordGenerationOptions:passwordGenerationOptions forViewController:self sender:sender completion:^(NSDictionary *loginDict, NSError *error) {
         
         if (!loginDict) {
             if (error.code != AppExtensionErrorCodeCancelledByUser) {

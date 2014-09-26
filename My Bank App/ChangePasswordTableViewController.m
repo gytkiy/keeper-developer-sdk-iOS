@@ -170,10 +170,10 @@
 }
 
 - (IBAction)keeperAction:(id)sender {
-    [self keeperLockAction];
+    [self keeperLockAction:sender];
 }
 
-- (void)keeperLockAction {
+- (void)keeperLockAction:(id)sender {
     NSString *changedPassword = self.password1 ? : @"";
     
     // Validate that the new and confirmation passwords match.
@@ -205,7 +205,7 @@
     
     __weak typeof (self) miniMe = self;
     
-    [[KeeperSDK sharedExtension] changePasswordForLoginForURLString:@"http://www.my-bank-website.com" loginDetails:loginDetails passwordGenerationOptions:passwordGenerationOptions forViewController:self sender:self completion:^(NSDictionary *loginDict, NSError *error) {
+    [[KeeperSDK sharedExtension] changePasswordForLoginForURLString:@"http://www.my-bank-website.com" loginDetails:loginDetails passwordGenerationOptions:passwordGenerationOptions forViewController:self sender:sender completion:^(NSDictionary *loginDict, NSError *error) {
         if (!loginDict) {
             if (error.code != AppExtensionErrorCodeCancelledByUser) {
                 NSLog(@"Failed to use Keeper App Extension to change password: %@", error);
