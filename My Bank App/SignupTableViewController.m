@@ -32,6 +32,8 @@
 #else
     [self.keeperTabBtn setHidden:TRUE];
 #endif
+    [self.tableView setRowHeight:44.0f];
+    [self.headerView setFrame:CGRectMake(self.headerView.bounds.origin.x, self.headerView.bounds.origin.y, self.headerView.bounds.size.width, 135)];
 }
 
 - (void)didReceiveMemoryWarning {
