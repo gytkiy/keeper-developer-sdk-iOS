@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0F815D9E19EC74A30078BB4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815D9D19EC74A30078BB4A /* AppDelegate.swift */; };
 		0F815DA019EC74A30078BB4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815D9F19EC74A30078BB4A /* ViewController.swift */; };
-		0F815DA319EC74A30078BB4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F815DA119EC74A30078BB4A /* Main.storyboard */; };
 		0F815DA519EC74A30078BB4A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F815DA419EC74A30078BB4A /* Images.xcassets */; };
 		0F815DA819EC74A30078BB4A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F815DA619EC74A30078BB4A /* LaunchScreen.xib */; };
 		0F815DB419EC74A30078BB4A /* My_Bank_App_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815DB319EC74A30078BB4A /* My_Bank_App_SwiftTests.swift */; };
@@ -43,6 +42,7 @@
 		0F815DEF19EC76D50078BB4A /* AccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815DED19EC76D50078BB4A /* AccountTableViewController.swift */; };
 		0F815DF119EC77060078BB4A /* KeeperLockActionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815DF019EC77060078BB4A /* KeeperLockActionDelegate.swift */; };
 		0F815DF219EC77060078BB4A /* KeeperLockActionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815DF019EC77060078BB4A /* KeeperLockActionDelegate.swift */; };
+		0F815DFF19EC7E870078BB4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F815DFE19EC7E870078BB4A /* Main.storyboard */; };
 		324A024919CCD83F00D2E07A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 324A024819CCD83F00D2E07A /* main.m */; };
 		324A024C19CCD83F00D2E07A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 324A024B19CCD83F00D2E07A /* AppDelegate.m */; };
 		324A024F19CCD83F00D2E07A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324A024E19CCD83F00D2E07A /* ViewController.m */; };
@@ -112,7 +112,6 @@
 		0F815D9C19EC74A30078BB4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F815D9D19EC74A30078BB4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F815D9F19EC74A30078BB4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0F815DA219EC74A30078BB4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F815DA419EC74A30078BB4A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0F815DA719EC74A30078BB4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0F815DAD19EC74A30078BB4A /* My Bank App SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My Bank App SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +139,7 @@
 		0F815DEA19EC76C00078BB4A /* AccountInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountInformation.swift; sourceTree = "<group>"; };
 		0F815DED19EC76D50078BB4A /* AccountTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableViewController.swift; sourceTree = "<group>"; };
 		0F815DF019EC77060078BB4A /* KeeperLockActionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeeperLockActionDelegate.swift; sourceTree = "<group>"; };
+		0F815DFE19EC7E870078BB4A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		324A024319CCD83F00D2E07A /* My Bank App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Bank App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		324A024719CCD83F00D2E07A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		324A024819CCD83F00D2E07A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -221,7 +221,7 @@
 				0F815DEA19EC76C00078BB4A /* AccountInformation.swift */,
 				0F815DED19EC76D50078BB4A /* AccountTableViewController.swift */,
 				0F815DF019EC77060078BB4A /* KeeperLockActionDelegate.swift */,
-				0F815DA119EC74A30078BB4A /* Main.storyboard */,
+				0F815DFE19EC7E870078BB4A /* Main.storyboard */,
 				0F815DA419EC74A30078BB4A /* Images.xcassets */,
 				0F815DA619EC74A30078BB4A /* LaunchScreen.xib */,
 				0F815D9B19EC74A30078BB4A /* Supporting Files */,
@@ -496,7 +496,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F815DD419EC74CD0078BB4A /* Bank_Logo_80.png in Resources */,
-				0F815DA319EC74A30078BB4A /* Main.storyboard in Resources */,
 				0F815DDD19EC74CD0078BB4A /* lock.png in Resources */,
 				0F815DCF19EC74CD0078BB4A /* Bank_Logo_29.png in Resources */,
 				0F815DD219EC74CD0078BB4A /* Bank_Logo_60.png in Resources */,
@@ -513,6 +512,7 @@
 				0F815DDB19EC74CD0078BB4A /* Icon_Tab.png in Resources */,
 				0F815DDC19EC74CD0078BB4A /* Icon_Tab@2x.png in Resources */,
 				0F815DD819EC74CD0078BB4A /* Bank_Logo@1x.png in Resources */,
+				0F815DFF19EC7E870078BB4A /* Main.storyboard in Resources */,
 				0F815DDE19EC74CD0078BB4A /* lock@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -618,14 +618,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0F815DA119EC74A30078BB4A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0F815DA219EC74A30078BB4A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0F815DA619EC74A30078BB4A /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
