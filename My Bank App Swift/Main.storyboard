@@ -313,6 +313,9 @@
                                         <state key="normal" image="lock.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="lockAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eod-iR-rt6"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oB6-34-Fux">
                                         <rect key="frame" x="258" y="74" width="20" height="20"/>
@@ -325,6 +328,9 @@
                                         <state key="normal" image="lock.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="lockAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="njX-G1-eqy"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MmY-Gi-wHy">
                                         <rect key="frame" x="69" y="119" width="150" height="36"/>
@@ -386,6 +392,9 @@
                                 <state key="normal" image="Icon_Tab.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="lockAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mJ3-Hc-9hl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.91550611413043481" green="0.91550611413043481" blue="0.91550611413043481" alpha="1" colorSpace="calibratedRGB"/>
@@ -405,6 +414,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="SHG-Bp-7Qa"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="keeperLockBtn1" destination="Xs5-9h-DiS" id="fAd-tO-kV8"/>
+                        <outlet property="keeperLockBtn2" destination="oB6-34-Fux" id="bmD-HK-lGd"/>
+                        <outlet property="keeperTabBtn" destination="469-7c-fTm" id="evJ-cx-rcs"/>
+                        <outlet property="txtPassword" destination="igF-J8-Wnq" id="P5o-sR-Acm"/>
+                        <outlet property="txtUser" destination="WN7-TS-ssW" id="Ukt-Bc-8vh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -646,7 +662,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="lockAction:" destination="4Eb-6N-2AH" eventType="touchUpInside" id="dri-Ju-qOb"/>
+                                            <action selector="lockAction:" destination="4Eb-6N-2AH" eventType="touchUpInside" id="ENA-20-nwj"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQP-4d-pwp">
@@ -661,7 +677,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="lockAction:" destination="4Eb-6N-2AH" eventType="touchUpInside" id="Fma-9i-0mF"/>
+                                            <action selector="lockAction:" destination="4Eb-6N-2AH" eventType="touchUpInside" id="zeT-Ql-D96"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMb-dq-Otz">
@@ -719,7 +735,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="lockAction:" destination="4Eb-6N-2AH" eventType="touchUpInside" id="iU9-5X-jTG"/>
+                                    <action selector="lockAction:" destination="4Eb-6N-2AH" eventType="touchUpInside" id="pz1-Ua-vdY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -741,11 +757,10 @@
                     <navigationItem key="navigationItem" id="MQu-Jk-QBa"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <outlet property="keeperLockBtn1" destination="1pg-C4-C3u" id="dre-TZ-HwK"/>
-                        <outlet property="keeperLockBtn2" destination="sQP-4d-pwp" id="h7W-tq-4Cp"/>
+                        <outlet property="keeperLockBtn1" destination="1pg-C4-C3u" id="LwU-pS-FcB"/>
+                        <outlet property="keeperLockBtn2" destination="sQP-4d-pwp" id="FkX-Dy-V9Q"/>
                         <outlet property="keeperTabBtn" destination="WID-mj-e5K" id="zH3-0E-s3G"/>
-                        <outlet property="txtPassword" destination="qk4-fO-8Sa" id="VRf-HI-XNo"/>
-                        <outlet property="txtUser" destination="NQ0-cF-EEZ" id="gIn-DK-mnt"/>
+                        <outlet property="txtPassword" destination="qk4-fO-8Sa" id="HHr-8w-fgH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5xb-GB-T9P" sceneMemberID="firstResponder"/>

@@ -43,6 +43,9 @@
 		0F815DF119EC77060078BB4A /* KeeperLockActionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815DF019EC77060078BB4A /* KeeperLockActionDelegate.swift */; };
 		0F815DF219EC77060078BB4A /* KeeperLockActionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815DF019EC77060078BB4A /* KeeperLockActionDelegate.swift */; };
 		0F815DFF19EC7E870078BB4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F815DFE19EC7E870078BB4A /* Main.storyboard */; };
+		0F815E0119EC853B0078BB4A /* KeeperExtensionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F815E0019EC853B0078BB4A /* KeeperExtensionSDK.framework */; };
+		0F815E0219EC85480078BB4A /* KeeperExtensionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F815E0019EC853B0078BB4A /* KeeperExtensionSDK.framework */; };
+		0F815E0319EC85480078BB4A /* KeeperExtensionSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F815E0019EC853B0078BB4A /* KeeperExtensionSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		324A024919CCD83F00D2E07A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 324A024819CCD83F00D2E07A /* main.m */; };
 		324A024C19CCD83F00D2E07A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 324A024B19CCD83F00D2E07A /* AppDelegate.m */; };
 		324A024F19CCD83F00D2E07A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324A024E19CCD83F00D2E07A /* ViewController.m */; };
@@ -90,6 +93,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				0F815DBC19EC74AB0078BB4A /* KeeperExtensionSDK.framework in Embed Frameworks */,
+				0F815E0319EC85480078BB4A /* KeeperExtensionSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +144,7 @@
 		0F815DED19EC76D50078BB4A /* AccountTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableViewController.swift; sourceTree = "<group>"; };
 		0F815DF019EC77060078BB4A /* KeeperLockActionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeeperLockActionDelegate.swift; sourceTree = "<group>"; };
 		0F815DFE19EC7E870078BB4A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0F815E0019EC853B0078BB4A /* KeeperExtensionSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KeeperExtensionSDK.framework; sourceTree = "<group>"; };
 		324A024319CCD83F00D2E07A /* My Bank App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Bank App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		324A024719CCD83F00D2E07A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		324A024819CCD83F00D2E07A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -181,6 +186,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F815DBB19EC74AB0078BB4A /* KeeperExtensionSDK.framework in Frameworks */,
+				0F815E0219EC85480078BB4A /* KeeperExtensionSDK.framework in Frameworks */,
+				0F815E0119EC853B0078BB4A /* KeeperExtensionSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +231,7 @@
 				0F815DFE19EC7E870078BB4A /* Main.storyboard */,
 				0F815DA419EC74A30078BB4A /* Images.xcassets */,
 				0F815DA619EC74A30078BB4A /* LaunchScreen.xib */,
+				0F815E0019EC853B0078BB4A /* KeeperExtensionSDK.framework */,
 				0F815D9B19EC74A30078BB4A /* Supporting Files */,
 			);
 			path = "My Bank App Swift";
@@ -653,6 +661,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/My",
+					Bank,
+					App,
+					Swift,
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -675,6 +687,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/My",
+					Bank,
+					App,
+					Swift,
 				);
 				INFOPLIST_FILE = "My Bank App Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;

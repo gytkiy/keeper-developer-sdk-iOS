@@ -8,6 +8,16 @@
 
 import UIKit
 
+private let _SingletonSharedInstance = AccountInformation()
+
 class AccountInformation: NSObject {
+    
+    var username:String?
+    var password:String?
+    
+    class var sharedInstance : AccountInformation {
+        return _SingletonSharedInstance
+    }
+    
    
 }
