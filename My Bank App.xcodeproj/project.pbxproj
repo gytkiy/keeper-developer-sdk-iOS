@@ -31,6 +31,18 @@
 		0F815DDC19EC74CD0078BB4A /* Icon_Tab@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F815DCC19EC74CD0078BB4A /* Icon_Tab@2x.png */; };
 		0F815DDD19EC74CD0078BB4A /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F815DCD19EC74CD0078BB4A /* lock.png */; };
 		0F815DDE19EC74CD0078BB4A /* lock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F815DCE19EC74CD0078BB4A /* lock@2x.png */; };
+		0F815DE219EC766E0078BB4A /* KeeperTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815DE119EC766E0078BB4A /* KeeperTableViewCell.swift */; };
+		0F815DE319EC766E0078BB4A /* KeeperTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815DE119EC766E0078BB4A /* KeeperTableViewCell.swift */; };
+		0F815DE519EC76940078BB4A /* SignupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815DE419EC76940078BB4A /* SignupTableViewController.swift */; };
+		0F815DE619EC76940078BB4A /* SignupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815DE419EC76940078BB4A /* SignupTableViewController.swift */; };
+		0F815DE819EC76A70078BB4A /* ChangePasswordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815DE719EC76A70078BB4A /* ChangePasswordTableViewController.swift */; };
+		0F815DE919EC76A70078BB4A /* ChangePasswordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815DE719EC76A70078BB4A /* ChangePasswordTableViewController.swift */; };
+		0F815DEB19EC76C00078BB4A /* AccountInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815DEA19EC76C00078BB4A /* AccountInformation.swift */; };
+		0F815DEC19EC76C00078BB4A /* AccountInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815DEA19EC76C00078BB4A /* AccountInformation.swift */; };
+		0F815DEE19EC76D50078BB4A /* AccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815DED19EC76D50078BB4A /* AccountTableViewController.swift */; };
+		0F815DEF19EC76D50078BB4A /* AccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815DED19EC76D50078BB4A /* AccountTableViewController.swift */; };
+		0F815DF119EC77060078BB4A /* KeeperLockActionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815DF019EC77060078BB4A /* KeeperLockActionDelegate.swift */; };
+		0F815DF219EC77060078BB4A /* KeeperLockActionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815DF019EC77060078BB4A /* KeeperLockActionDelegate.swift */; };
 		324A024919CCD83F00D2E07A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 324A024819CCD83F00D2E07A /* main.m */; };
 		324A024C19CCD83F00D2E07A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 324A024B19CCD83F00D2E07A /* AppDelegate.m */; };
 		324A024F19CCD83F00D2E07A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324A024E19CCD83F00D2E07A /* ViewController.m */; };
@@ -122,6 +134,12 @@
 		0F815DCC19EC74CD0078BB4A /* Icon_Tab@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_Tab@2x.png"; sourceTree = "<group>"; };
 		0F815DCD19EC74CD0078BB4A /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock.png; sourceTree = "<group>"; };
 		0F815DCE19EC74CD0078BB4A /* lock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lock@2x.png"; sourceTree = "<group>"; };
+		0F815DE119EC766E0078BB4A /* KeeperTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeeperTableViewCell.swift; sourceTree = "<group>"; };
+		0F815DE419EC76940078BB4A /* SignupTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupTableViewController.swift; sourceTree = "<group>"; };
+		0F815DE719EC76A70078BB4A /* ChangePasswordTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordTableViewController.swift; sourceTree = "<group>"; };
+		0F815DEA19EC76C00078BB4A /* AccountInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountInformation.swift; sourceTree = "<group>"; };
+		0F815DED19EC76D50078BB4A /* AccountTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableViewController.swift; sourceTree = "<group>"; };
+		0F815DF019EC77060078BB4A /* KeeperLockActionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeeperLockActionDelegate.swift; sourceTree = "<group>"; };
 		324A024319CCD83F00D2E07A /* My Bank App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Bank App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		324A024719CCD83F00D2E07A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		324A024819CCD83F00D2E07A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -195,8 +213,14 @@
 			isa = PBXGroup;
 			children = (
 				0F815DBE19EC74B90078BB4A /* images */,
+				0F815DE119EC766E0078BB4A /* KeeperTableViewCell.swift */,
 				0F815D9D19EC74A30078BB4A /* AppDelegate.swift */,
 				0F815D9F19EC74A30078BB4A /* ViewController.swift */,
+				0F815DE419EC76940078BB4A /* SignupTableViewController.swift */,
+				0F815DE719EC76A70078BB4A /* ChangePasswordTableViewController.swift */,
+				0F815DEA19EC76C00078BB4A /* AccountInformation.swift */,
+				0F815DED19EC76D50078BB4A /* AccountTableViewController.swift */,
+				0F815DF019EC77060078BB4A /* KeeperLockActionDelegate.swift */,
 				0F815DA119EC74A30078BB4A /* Main.storyboard */,
 				0F815DA419EC74A30078BB4A /* Images.xcassets */,
 				0F815DA619EC74A30078BB4A /* LaunchScreen.xib */,
@@ -430,6 +454,7 @@
 				TargetAttributes = {
 					0F815D9819EC74A30078BB4A = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 234QNB7GCA;
 					};
 					0F815DAC19EC74A30078BB4A = {
 						CreatedOnToolsVersion = 6.1;
@@ -531,6 +556,12 @@
 			files = (
 				0F815DA019EC74A30078BB4A /* ViewController.swift in Sources */,
 				0F815D9E19EC74A30078BB4A /* AppDelegate.swift in Sources */,
+				0F815DEE19EC76D50078BB4A /* AccountTableViewController.swift in Sources */,
+				0F815DE219EC766E0078BB4A /* KeeperTableViewCell.swift in Sources */,
+				0F815DE519EC76940078BB4A /* SignupTableViewController.swift in Sources */,
+				0F815DEB19EC76C00078BB4A /* AccountInformation.swift in Sources */,
+				0F815DE819EC76A70078BB4A /* ChangePasswordTableViewController.swift in Sources */,
+				0F815DF119EC77060078BB4A /* KeeperLockActionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,6 +570,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F815DB419EC74A30078BB4A /* My_Bank_App_SwiftTests.swift in Sources */,
+				0F815DE619EC76940078BB4A /* SignupTableViewController.swift in Sources */,
+				0F815DEF19EC76D50078BB4A /* AccountTableViewController.swift in Sources */,
+				0F815DE919EC76A70078BB4A /* ChangePasswordTableViewController.swift in Sources */,
+				0F815DE319EC766E0078BB4A /* KeeperTableViewCell.swift in Sources */,
+				0F815DEC19EC76C00078BB4A /* AccountInformation.swift in Sources */,
+				0F815DF219EC77060078BB4A /* KeeperLockActionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,6 +657,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -633,6 +671,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -640,6 +679,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -648,6 +688,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -842,6 +883,7 @@
 				0F815DB619EC74A30078BB4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F815DBA19EC74A30078BB4A /* Build configuration list for PBXNativeTarget "My Bank App SwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -850,6 +892,7 @@
 				0F815DB819EC74A30078BB4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		324A023E19CCD83F00D2E07A /* Build configuration list for PBXProject "My Bank App" */ = {
 			isa = XCConfigurationList;
