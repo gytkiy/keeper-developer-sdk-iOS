@@ -1,0 +1,6 @@
+framework module KeeperExtensionSDK {
+  umbrella header "KeeperExtensionSDK.h"
+
+  export *
+  module * { export * }
+}

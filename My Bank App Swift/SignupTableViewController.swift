@@ -85,8 +85,8 @@ class SignupTableViewController: UITableViewController, UITextFieldDelegate, Kee
         
         cell.txtText.tag = indexPath.row
         cell.delegate = self
-        cell.returnKeyType = .Done
-        cell.selectionStyle = .None
+        cell.returnKeyType = UIReturnKeyType.Done
+        cell.selectionStyle = UITableViewCellSelectionStyle.None
         
         cell.setUpCell()
         
@@ -119,9 +119,7 @@ class SignupTableViewController: UITableViewController, UITextFieldDelegate, Kee
     }
     
     func textFieldDidEndEditing(textField: UITextField) {
-        if textField.tag == 0 {
-            
-        }
+
         switch textField.tag {
         case 0:
             firstName = textField.text
@@ -195,29 +193,6 @@ class SignupTableViewController: UITableViewController, UITextFieldDelegate, Kee
             
         }
         
-     
-//        
-//        __weak typeof (self) miniMe = self;
-//        
-//        [[KeeperSDK sharedExtension] storeLoginForURLString:@"http://www.my-bank-website.com" loginDetails:newLoginDetails passwordGenerationOptions:passwordGenerationOptions forViewController:self sender:sender completion:^(NSDictionary *loginDict, NSError *error) {
-//            
-//            if (!loginDict) {
-//                if (error.code != AppExtensionErrorCodeCancelledByUser) {
-//                    NSLog(@"Failed to use Keeper App Extension to save a new Login: %@", error);
-//                }
-//                return;
-//            }
-//            
-//            __strong typeof(self) strongMe = miniMe;
-//            
-//            strongMe.email = loginDict[AppExtensionUsernameKey] ? : @"";
-//            strongMe.password = loginDict[AppExtensionPasswordKey] ? : @"";
-//            strongMe.firstname = loginDict[AppExtensionReturnedFieldsKey][@"firstname"] ? : @"";
-//            strongMe.lastname = loginDict[AppExtensionReturnedFieldsKey][@"lastname"] ? : @"";
-//            // retrieve any additional fields that were passed in newLoginDetails dictionary
-//            
-//            [self.tableView reloadData];
-//        }];
         
 
         

@@ -7,9 +7,14 @@
 //
 
 import UIKit
+import KeeperExtensionSDK
 
-class ChangePasswordTableViewController: UITableViewController {
+class ChangePasswordTableViewController: UITableViewController, UITextFieldDelegate, KeeperLockActionDelegate {
 
+    @IBOutlet weak var keeperTabBtn: UIButton!
+    var oldpassword:NSString?
+    var password1:NSString?
+    var password2:NSString?
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,60 +35,80 @@ class ChangePasswordTableViewController: UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 0
+        return 3
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("keeperCell", forIndexPath: indexPath) as KeeperTableViewCell
 
         // Configure the cell...
+        
+        switch indexPath.row {
+        case 0:
+            cell.txtText.secureTextEntry = true
+            cell.txtText.placeholder = "Old Password"
+            if let oldpassword = oldpassword {
+                cell.txtText.text = oldpassword
+            }
+        case 1:
+            cell.txtText.secureTextEntry = true
+            cell.txtText.placeholder = "New Password"
+            if let password1 = password1 {
+                cell.txtText.text = password1
+            }
+        case 2:
+            cell.txtText.secureTextEntry = true
+            cell.txtText.placeholder = "Confirm Password"
+            if let password2 = password2 {
+                cell.txtText.text = password2
+            }
+        default:
+            cell.txtText.text = ""
+        }
+        
+        
+        // Configure the cell...
+        
+        cell.txtText.tag = indexPath.row
+        cell.delegate = self
+        cell.returnKeyType = UIReturnKeyType.Done
+        cell.selectionStyle = UITableViewCellSelectionStyle.None
+        
+        cell.setUpCell()
+
 
         return cell
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the specified item to be editable.
+    
+    // MARK: - UITextFieldDelegate
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
         return true
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+        switch textField.tag {
+        case 0:
+            oldpassword = textField.text
+        case 1:
+            password1 = textField.text
+        case 2:
+            password2 = textField.text
+        default:
+            println("Default Case")
+        }
     }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
+    
+    
+   
     /*
     // MARK: - Navigation
 
@@ -93,5 +118,53 @@ class ChangePasswordTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func changeAction(sender: AnyObject) {
+        
+        
+        
+        let alert = UIAlertController(title: "Password Changed", message: "Your password has been changed", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler: nil))
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+        self.presentViewController(alert, animated: true, completion: nil)
+        return;
+    }
 
+    @IBAction func keeperLockAction(sender: AnyObject) {
+        
+        let changePassword = password1 ?? ""
+        
+        if (changePassword.length > 0) && !(changePassword == password2) {
+            let alert = UIAlertController(title: "Change Password Error", message: "The new and the confirmation passwords must match", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler: nil))
+            
+            password1 = ""
+            password2 = ""
+            self.presentViewController(alert, animated: true, completion: nil)
+            return;
+        }
+        
+        let loginDetails = [AppExtensionTitleKey: "My Bank Registration",
+            AppExtensionPasswordKey: changePassword,
+            AppExtensionOldPasswordKey: oldpassword ?? "",
+            AppExtensionNotesKey: "Saved with the My Bank app"]
+        
+        let passwordGenerationOptions = [AppExtensionGeneratedPasswordMinLengthKey: 6, AppExtensionGeneratedPasswordMaxLengthKey: 50]
+        
+        KeeperSDK.sharedExtension().changePasswordForLoginForURLString("http://www.my-bank-website.com", loginDetails: loginDetails, passwordGenerationOptions: passwordGenerationOptions, forViewController: self, sender: sender) { (loginDict:[NSObject : AnyObject]!, error:NSError!) -> Void in
+            if error.code != AppExtensionErrorCodeCancelledByUser {
+                println("Failed to use Keeper App Extension to change password: \(error)")
+                return
+            }
+            
+            self.oldpassword = loginDict[AppExtensionOldPasswordKey] as? NSString
+            self.password1 = loginDict[AppExtensionOldPasswordKey] as? NSString
+            self.password2 = loginDict[AppExtensionOldPasswordKey] as? NSString
+            
+            self.tableView.reloadData()
+        }
+
+    }
 }
