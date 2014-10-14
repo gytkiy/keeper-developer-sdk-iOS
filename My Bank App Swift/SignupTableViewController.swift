@@ -7,9 +7,16 @@
 //
 
 import UIKit
+import KeeperExtensionSDK
 
-class SignupTableViewController: UITableViewController {
+class SignupTableViewController: UITableViewController, UITextFieldDelegate, KeeperLockActionDelegate {
 
+    
+    var firstName:String?
+    var lastName:String?
+    var email:String?
+    var password:String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +25,7 @@ class SignupTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,60 +38,69 @@ class SignupTableViewController: UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 0
+        return 4
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("keeperCell", forIndexPath: indexPath) as KeeperTableViewCell
+        
+        switch indexPath.row {
+        case 0:
+            cell.txtText.secureTextEntry = false
+            cell.txtText.placeholder = "First Name"
+            if let firstName = firstName {
+                cell.txtText.text = firstName
+            }
+        case 1:
+            cell.txtText.secureTextEntry = false
+            cell.txtText.placeholder = "Last Name"
+            if let lastName = lastName {
+                cell.txtText.text = lastName
+            }
+        case 2:
+            cell.txtText.secureTextEntry = false
+            cell.txtText.placeholder = "Email"
+            if let email = email {
+                cell.txtText.text = email
+            }
+        case 3:
+            cell.txtText.secureTextEntry = true
+            cell.txtText.placeholder = "Password"
+            if let password = password {
+                cell.txtText.text = password
+            }
+        default:
+            cell.txtText.text = ""
+        }
+        
 
         // Configure the cell...
+        
+        cell.txtText.tag = indexPath.row
+        cell.delegate = self
+        cell.returnKeyType = .Done
+        cell.selectionStyle = .None
+        
+        cell.setUpCell()
+        
 
         return cell
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the specified item to be editable.
-        return true
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 44.0
     }
-    */
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+    @IBAction func cancelButton(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
     /*
     // MARK: - Navigation
 
@@ -93,5 +110,117 @@ class SignupTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    // MARK: - UITextFieldDelegate
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+        if textField.tag == 0 {
+            
+        }
+        switch textField.tag {
+        case 0:
+            firstName = textField.text
+        case 1:
+            lastName = textField.text
+        case 2:
+            email = textField.text
+        case 3:
+            password = textField.text
+        default:
+            println("Default Case")
+        }
+    }
 
+    
+    
+    // MARK: - Keeper Lock Actions
+    
+    @IBAction func registerAction(sender: AnyObject) {
+        
+        let alert = UIAlertController(title: "Registration Successful", message: "Your account has been created.", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+
+        AccountInformation.sharedInstance.username = self.email
+        AccountInformation.sharedInstance.password = self.password
+        self.dismissViewControllerAnimated(true, completion: nil)
+        self.presentViewController(alert, animated: true, completion: nil)
+
+
+        return;
+    }
+
+    @IBAction func keeperLockAction(sender: AnyObject) {
+        
+        var newLoginDetails : [NSString:AnyObject] = Dictionary()
+        newLoginDetails[AppExtensionTitleKey] = "My Bank Registration"
+        newLoginDetails[AppExtensionUsernameKey] = email ?? ""
+        newLoginDetails[AppExtensionPasswordKey] = password ?? ""
+        newLoginDetails[AppExtensionNotesKey] = "Saved with the My Bank app"
+        newLoginDetails[AppExtensionSectionTitleKey] = "My Bank"
+        newLoginDetails[AppExtensionFieldsKey] = ["firstname" : firstName ?? "", "lastname": lastName ?? ""]
+        
+        
+        
+        let passwordGenerationOptions = [AppExtensionGeneratedPasswordMinLengthKey: 6, AppExtensionGeneratedPasswordMaxLengthKey: 50]
+        
+        KeeperSDK.sharedExtension().storeLoginForURLString("http://www.my-bank-website.com", loginDetails: newLoginDetails, passwordGenerationOptions: passwordGenerationOptions, forViewController: self, sender: sender) { (loginDict:[NSObject : AnyObject]!, error:NSError!) -> Void in
+            
+            if (error != nil) {
+                let newError = error as NSError!
+                if (newError.code != AppExtensionErrorCodeCancelledByUser) {
+                    println("Error invoking Keeper App Extension for find login: \(error)")
+                }
+                return;
+                
+            }
+            
+            if (loginDict != nil) {
+                
+                
+                self.email = (loginDict[AppExtensionUsernameKey] ?? "") as NSString
+                self.password = (loginDict[AppExtensionPasswordKey] ?? "") as NSString
+                let nameDict = loginDict[AppExtensionReturnedFieldsKey] as Dictionary<String, AnyObject>
+                self.firstName = (nameDict["firstname"] ?? "") as NSString
+                self.lastName = (nameDict["lastname"] ?? "") as NSString
+
+                self.tableView.reloadData()
+            }
+            
+            
+        }
+        
+     
+//        
+//        __weak typeof (self) miniMe = self;
+//        
+//        [[KeeperSDK sharedExtension] storeLoginForURLString:@"http://www.my-bank-website.com" loginDetails:newLoginDetails passwordGenerationOptions:passwordGenerationOptions forViewController:self sender:sender completion:^(NSDictionary *loginDict, NSError *error) {
+//            
+//            if (!loginDict) {
+//                if (error.code != AppExtensionErrorCodeCancelledByUser) {
+//                    NSLog(@"Failed to use Keeper App Extension to save a new Login: %@", error);
+//                }
+//                return;
+//            }
+//            
+//            __strong typeof(self) strongMe = miniMe;
+//            
+//            strongMe.email = loginDict[AppExtensionUsernameKey] ? : @"";
+//            strongMe.password = loginDict[AppExtensionPasswordKey] ? : @"";
+//            strongMe.firstname = loginDict[AppExtensionReturnedFieldsKey][@"firstname"] ? : @"";
+//            strongMe.lastname = loginDict[AppExtensionReturnedFieldsKey][@"lastname"] ? : @"";
+//            // retrieve any additional fields that were passed in newLoginDetails dictionary
+//            
+//            [self.tableView reloadData];
+//        }];
+        
+
+        
+        
+    }
 }

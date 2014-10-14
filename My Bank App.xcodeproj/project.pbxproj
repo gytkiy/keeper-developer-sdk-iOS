@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F6941FD19EC9C0100E0560E /* KeeperExtensionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F815E0019EC853B0078BB4A /* KeeperExtensionSDK.framework */; };
+		0F6941FE19EC9C1100E0560E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815D9F19EC74A30078BB4A /* ViewController.swift */; };
+		0F6941FF19EC9C1700E0560E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815D9D19EC74A30078BB4A /* AppDelegate.swift */; };
+		0F69420119EC9C6E00E0560E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F69420019EC9C6E00E0560E /* Main.storyboard */; };
+		0F69420219ED7E8C00E0560E /* KeeperExtensionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F815E0019EC853B0078BB4A /* KeeperExtensionSDK.framework */; };
+		0F69420319ED7E8C00E0560E /* KeeperExtensionSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F815E0019EC853B0078BB4A /* KeeperExtensionSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0F815D9E19EC74A30078BB4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815D9D19EC74A30078BB4A /* AppDelegate.swift */; };
 		0F815DA019EC74A30078BB4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815D9F19EC74A30078BB4A /* ViewController.swift */; };
 		0F815DA519EC74A30078BB4A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F815DA419EC74A30078BB4A /* Images.xcassets */; };
 		0F815DA819EC74A30078BB4A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F815DA619EC74A30078BB4A /* LaunchScreen.xib */; };
 		0F815DB419EC74A30078BB4A /* My_Bank_App_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815DB319EC74A30078BB4A /* My_Bank_App_SwiftTests.swift */; };
-		0F815DBB19EC74AB0078BB4A /* KeeperExtensionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32944F0A19D3914300E02114 /* KeeperExtensionSDK.framework */; };
-		0F815DBC19EC74AB0078BB4A /* KeeperExtensionSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32944F0A19D3914300E02114 /* KeeperExtensionSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0F815DCF19EC74CD0078BB4A /* Bank_Logo_29.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F815DBF19EC74CD0078BB4A /* Bank_Logo_29.png */; };
 		0F815DD019EC74CD0078BB4A /* Bank_Logo_40.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F815DC019EC74CD0078BB4A /* Bank_Logo_40.png */; };
 		0F815DD119EC74CD0078BB4A /* Bank_Logo_58.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F815DC119EC74CD0078BB4A /* Bank_Logo_58.png */; };
@@ -42,10 +46,6 @@
 		0F815DEF19EC76D50078BB4A /* AccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815DED19EC76D50078BB4A /* AccountTableViewController.swift */; };
 		0F815DF119EC77060078BB4A /* KeeperLockActionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815DF019EC77060078BB4A /* KeeperLockActionDelegate.swift */; };
 		0F815DF219EC77060078BB4A /* KeeperLockActionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815DF019EC77060078BB4A /* KeeperLockActionDelegate.swift */; };
-		0F815DFF19EC7E870078BB4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F815DFE19EC7E870078BB4A /* Main.storyboard */; };
-		0F815E0119EC853B0078BB4A /* KeeperExtensionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F815E0019EC853B0078BB4A /* KeeperExtensionSDK.framework */; };
-		0F815E0219EC85480078BB4A /* KeeperExtensionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F815E0019EC853B0078BB4A /* KeeperExtensionSDK.framework */; };
-		0F815E0319EC85480078BB4A /* KeeperExtensionSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F815E0019EC853B0078BB4A /* KeeperExtensionSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		324A024919CCD83F00D2E07A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 324A024819CCD83F00D2E07A /* main.m */; };
 		324A024C19CCD83F00D2E07A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 324A024B19CCD83F00D2E07A /* AppDelegate.m */; };
 		324A024F19CCD83F00D2E07A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324A024E19CCD83F00D2E07A /* ViewController.m */; };
@@ -86,14 +86,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		0F815DBD19EC74AB0078BB4A /* Embed Frameworks */ = {
+		0F69420419ED7E8C00E0560E /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0F815DBC19EC74AB0078BB4A /* KeeperExtensionSDK.framework in Embed Frameworks */,
-				0F815E0319EC85480078BB4A /* KeeperExtensionSDK.framework in Embed Frameworks */,
+				0F69420319ED7E8C00E0560E /* KeeperExtensionSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,6 +111,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0F69420019EC9C6E00E0560E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0F815D9919EC74A30078BB4A /* My Bank App Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Bank App Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F815D9C19EC74A30078BB4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F815D9D19EC74A30078BB4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -143,7 +143,6 @@
 		0F815DEA19EC76C00078BB4A /* AccountInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountInformation.swift; sourceTree = "<group>"; };
 		0F815DED19EC76D50078BB4A /* AccountTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableViewController.swift; sourceTree = "<group>"; };
 		0F815DF019EC77060078BB4A /* KeeperLockActionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeeperLockActionDelegate.swift; sourceTree = "<group>"; };
-		0F815DFE19EC7E870078BB4A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0F815E0019EC853B0078BB4A /* KeeperExtensionSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KeeperExtensionSDK.framework; sourceTree = "<group>"; };
 		324A024319CCD83F00D2E07A /* My Bank App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Bank App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		324A024719CCD83F00D2E07A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -185,9 +184,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F815DBB19EC74AB0078BB4A /* KeeperExtensionSDK.framework in Frameworks */,
-				0F815E0219EC85480078BB4A /* KeeperExtensionSDK.framework in Frameworks */,
-				0F815E0119EC853B0078BB4A /* KeeperExtensionSDK.framework in Frameworks */,
+				0F69420219ED7E8C00E0560E /* KeeperExtensionSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +192,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F6941FD19EC9C0100E0560E /* KeeperExtensionSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,7 +226,7 @@
 				0F815DEA19EC76C00078BB4A /* AccountInformation.swift */,
 				0F815DED19EC76D50078BB4A /* AccountTableViewController.swift */,
 				0F815DF019EC77060078BB4A /* KeeperLockActionDelegate.swift */,
-				0F815DFE19EC7E870078BB4A /* Main.storyboard */,
+				0F69420019EC9C6E00E0560E /* Main.storyboard */,
 				0F815DA419EC74A30078BB4A /* Images.xcassets */,
 				0F815DA619EC74A30078BB4A /* LaunchScreen.xib */,
 				0F815E0019EC853B0078BB4A /* KeeperExtensionSDK.framework */,
@@ -386,7 +384,7 @@
 				0F815D9519EC74A30078BB4A /* Sources */,
 				0F815D9619EC74A30078BB4A /* Frameworks */,
 				0F815D9719EC74A30078BB4A /* Resources */,
-				0F815DBD19EC74AB0078BB4A /* Embed Frameworks */,
+				0F69420419ED7E8C00E0560E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -520,7 +518,7 @@
 				0F815DDB19EC74CD0078BB4A /* Icon_Tab.png in Resources */,
 				0F815DDC19EC74CD0078BB4A /* Icon_Tab@2x.png in Resources */,
 				0F815DD819EC74CD0078BB4A /* Bank_Logo@1x.png in Resources */,
-				0F815DFF19EC7E870078BB4A /* Main.storyboard in Resources */,
+				0F69420119EC9C6E00E0560E /* Main.storyboard in Resources */,
 				0F815DDE19EC74CD0078BB4A /* lock@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -580,9 +578,11 @@
 				0F815DB419EC74A30078BB4A /* My_Bank_App_SwiftTests.swift in Sources */,
 				0F815DE619EC76940078BB4A /* SignupTableViewController.swift in Sources */,
 				0F815DEF19EC76D50078BB4A /* AccountTableViewController.swift in Sources */,
+				0F6941FF19EC9C1700E0560E /* AppDelegate.swift in Sources */,
 				0F815DE919EC76A70078BB4A /* ChangePasswordTableViewController.swift in Sources */,
 				0F815DE319EC766E0078BB4A /* KeeperTableViewCell.swift in Sources */,
 				0F815DEC19EC76C00078BB4A /* AccountInformation.swift in Sources */,
+				0F6941FE19EC9C1100E0560E /* ViewController.swift in Sources */,
 				0F815DF219EC77060078BB4A /* KeeperLockActionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -665,6 +665,10 @@
 					Bank,
 					App,
 					Swift,
+					"$(PROJECT_DIR)/My",
+					Bank,
+					App,
+					Swift,
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -691,6 +695,10 @@
 					Bank,
 					App,
 					Swift,
+					"$(PROJECT_DIR)/My",
+					Bank,
+					App,
+					Swift,
 				);
 				INFOPLIST_FILE = "My Bank App Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -707,6 +715,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/My",
+					Bank,
+					App,
+					Swift,
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -727,6 +739,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/My",
+					Bank,
+					App,
+					Swift,
 				);
 				INFOPLIST_FILE = "My Bank App SwiftTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
