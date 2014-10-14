@@ -132,7 +132,7 @@ class ChangePasswordTableViewController: UITableViewController, UITextFieldDeleg
         
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler: nil))
         
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.navigationController?.popViewControllerAnimated(true)
         self.presentViewController(alert, animated: true, completion: nil)
         return;
     }
@@ -160,9 +160,13 @@ class ChangePasswordTableViewController: UITableViewController, UITextFieldDeleg
         let passwordGenerationOptions = [AppExtensionGeneratedPasswordMinLengthKey: 6, AppExtensionGeneratedPasswordMaxLengthKey: 50]
         
         KeeperSDK.sharedExtension().changePasswordForLoginForURLString("http://www.my-bank-website.com", loginDetails: loginDetails, passwordGenerationOptions: passwordGenerationOptions, forViewController: self, sender: sender) { (loginDict:[NSObject : AnyObject]!, error:NSError!) -> Void in
-            if error.code != AppExtensionErrorCodeCancelledByUser {
-                println("Failed to use Keeper App Extension to change password: \(error)")
-                return
+            
+            if (error != nil) {
+                if error.code != AppExtensionErrorCodeCancelledByUser {
+                    println("Failed to use Keeper App Extension to change password: \(error)")
+                    return
+                }
+                
             }
             
             self.oldpassword = loginDict[AppExtensionOldPasswordKey] as? NSString
