@@ -21,13 +21,22 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-//        if KeeperSDK.sharedExtension().isAppExtensionAvailable(){
-//            keeperLockBtn1.hidden = KeeperSDK.sharedExtension().isAppExtensionAvailable()
-//            keeperLockBtn2.hidden = KeeperSDK.sharedExtension().isAppExtensionAvailable()
-//        }
-        
 
+        
+        #if USE_KEEPER_TEXTFIELD_ICON
+            keeperLockBtn1.hidden = !(KeeperSDK.sharedExtension().isAppExtensionAvailable())
+            keeperLockBtn2.hidden = !(KeeperSDK.sharedExtension().isAppExtensionAvailable())
+        #else
+            keeperLockBtn1.hidden = true
+            keeperLockBtn2.hidden = true
+        #endif
+        
+        #if USE_KEEPER_TAB_ICON
+            keeperTabBtn.hidden = !(KeeperSDK.sharedExtension().isAppExtensionAvailable())
+        #else
+            keeperTabBtn.hidden = true
+        #endif
+            
         
         
         txtUser.delegate = self

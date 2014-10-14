@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KeeperExtensionSDK
 
 class KeeperTableViewCell: UITableViewCell {
 
@@ -18,12 +19,18 @@ class KeeperTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        #if USE_KEEPER_TEXTFIELD_ICON
+            keeperLockBtn.hidden = !(KeeperSDK.sharedExtension().isAppExtensionAvailable())
+        #endif
     }
     
     
     func setUpCell() {
         txtText.returnKeyType = returnKeyType
         txtText.delegate = delegate as? UITextFieldDelegate
+        #if USE_KEEPER_TEXTFIELD_ICON
+            keeperLockBtn.hidden = true
+        #endif
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

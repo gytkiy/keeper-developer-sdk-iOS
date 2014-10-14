@@ -11,6 +11,7 @@ import KeeperExtensionSDK
 
 class SignupTableViewController: UITableViewController, UITextFieldDelegate, KeeperLockActionDelegate {
 
+    @IBOutlet weak var keeperTabBtn: UIButton!
     
     var firstName:String?
     var lastName:String?
@@ -25,6 +26,12 @@ class SignupTableViewController: UITableViewController, UITextFieldDelegate, Kee
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        #if USE_KEEPER_TAB_ICON
+            keeperTabBtn.hidden = !(KeeperSDK.sharedExtension().isAppExtensionAvailable())
+        #else
+            keeperTabBtn.hidden = true
+        #endif
         
     }
 

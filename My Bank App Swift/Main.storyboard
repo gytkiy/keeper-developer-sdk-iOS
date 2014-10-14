@@ -167,7 +167,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="keeperLockBtn2" destination="PUG-fL-bKK" id="Kbg-g3-40a"/>
+                        <outlet property="keeperLockBtn1" destination="qBx-B7-o5Y" id="DnB-yM-7qP"/>
+                        <outlet property="keeperLockBtn2" destination="PUG-fL-bKK" id="pyF-rY-iC5"/>
                         <outlet property="keeperTabBtn" destination="gFP-b9-h0O" id="VbV-xb-NhS"/>
                         <outlet property="txtPassword" destination="w50-lz-u7Q" id="XWS-RV-B49"/>
                         <outlet property="txtUser" destination="Rh5-GP-8G0" id="bov-pC-Lbp"/>
@@ -348,6 +349,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="keeperTabBtn" destination="Xei-gs-f3r" id="3lh-cO-xb7"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sox-ty-FhR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
