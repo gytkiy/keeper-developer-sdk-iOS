@@ -155,7 +155,7 @@
 #pragma mark - Actions
 
 - (IBAction)cancelAction:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (IBAction)changeAction:(id)sender {
