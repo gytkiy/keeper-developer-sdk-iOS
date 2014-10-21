@@ -64,16 +64,16 @@ class AccountTableViewController: UITableViewController {
         
         
         if indexPath.section == 0 {
-            cell.textLabel?.text = "Personal and Business Accounts"
+            cell.textLabel.text = "Personal and Business Accounts"
         }else if indexPath.section == 1 {
             if indexPath.row == 0 {
-                cell.textLabel?.text = "CHK x-1234"
+                cell.textLabel.text = "CHK x-1234"
             }else if indexPath.row == 1 {
-                cell.textLabel?.text = "SAV x-1234"
+                cell.textLabel.text = "SAV x-1234"
             }
         }
         
-        cell.textLabel?.textColor = UIColor.blueColor()
+        cell.textLabel.textColor = UIColor.blueColor()
         cell.selectionStyle = UITableViewCellSelectionStyle.None
         cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
 

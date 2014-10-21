@@ -11,7 +11,7 @@ import KeeperExtensionSDK
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
-    
+    // WARNING: Clean up this code after testing
     @IBOutlet weak var txtUser: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var keeperLockBtn1: UIButton!
