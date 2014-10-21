@@ -44,7 +44,7 @@
 		0F815DEF19EC76D50078BB4A /* AccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815DED19EC76D50078BB4A /* AccountTableViewController.swift */; };
 		0F815DF119EC77060078BB4A /* KeeperLockActionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815DF019EC77060078BB4A /* KeeperLockActionDelegate.swift */; };
 		0F815DF219EC77060078BB4A /* KeeperLockActionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815DF019EC77060078BB4A /* KeeperLockActionDelegate.swift */; };
-		0FFD484C19F6C554000C3C07 /* KeeperExtensionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F5DE7BF19EDB8D600F89DF9 /* KeeperExtensionSDK.framework */; };
+		0FFD484D19F6C64E000C3C07 /* KeeperExtensionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F5DE7BF19EDB8D600F89DF9 /* KeeperExtensionSDK.framework */; };
 		324A024919CCD83F00D2E07A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 324A024819CCD83F00D2E07A /* main.m */; };
 		324A024C19CCD83F00D2E07A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 324A024B19CCD83F00D2E07A /* AppDelegate.m */; };
 		324A024F19CCD83F00D2E07A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324A024E19CCD83F00D2E07A /* ViewController.m */; };
@@ -190,7 +190,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FFD484C19F6C554000C3C07 /* KeeperExtensionSDK.framework in Frameworks */,
+				0FFD484D19F6C64E000C3C07 /* KeeperExtensionSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -659,22 +659,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/My",
-					Bank,
-					App,
-					Swift,
-					"$(PROJECT_DIR)/My",
-					Bank,
-					App,
-					Swift,
-					"$(PROJECT_DIR)/My",
-					Bank,
-					App,
-					Swift,
-					"$(PROJECT_DIR)/My",
-					Bank,
-					App,
-					Swift,
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -698,22 +682,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/My",
-					Bank,
-					App,
-					Swift,
-					"$(PROJECT_DIR)/My",
-					Bank,
-					App,
-					Swift,
-					"$(PROJECT_DIR)/My",
-					Bank,
-					App,
-					Swift,
-					"$(PROJECT_DIR)/My",
-					Bank,
-					App,
-					Swift,
 				);
 				INFOPLIST_FILE = "My Bank App Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -729,20 +697,8 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
-					"$(PROJECT_DIR)/My",
-					Bank,
-					App,
-					Swift,
-					"$(PROJECT_DIR)/My",
-					Bank,
-					App,
-					Swift,
-					"$(PROJECT_DIR)/My",
-					Bank,
-					App,
-					Swift,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -761,20 +717,8 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
-					"$(PROJECT_DIR)/My",
-					Bank,
-					App,
-					Swift,
-					"$(PROJECT_DIR)/My",
-					Bank,
-					App,
-					Swift,
-					"$(PROJECT_DIR)/My",
-					Bank,
-					App,
-					Swift,
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "My Bank App SwiftTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
