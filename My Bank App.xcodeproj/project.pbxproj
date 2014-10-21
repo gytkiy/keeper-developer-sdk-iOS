@@ -16,22 +16,6 @@
 		0F815DA519EC74A30078BB4A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F815DA419EC74A30078BB4A /* Images.xcassets */; };
 		0F815DA819EC74A30078BB4A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F815DA619EC74A30078BB4A /* LaunchScreen.xib */; };
 		0F815DB419EC74A30078BB4A /* My_Bank_App_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815DB319EC74A30078BB4A /* My_Bank_App_SwiftTests.swift */; };
-		0F815DCF19EC74CD0078BB4A /* Bank_Logo_29.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F815DBF19EC74CD0078BB4A /* Bank_Logo_29.png */; };
-		0F815DD019EC74CD0078BB4A /* Bank_Logo_40.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F815DC019EC74CD0078BB4A /* Bank_Logo_40.png */; };
-		0F815DD119EC74CD0078BB4A /* Bank_Logo_58.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F815DC119EC74CD0078BB4A /* Bank_Logo_58.png */; };
-		0F815DD219EC74CD0078BB4A /* Bank_Logo_60.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F815DC219EC74CD0078BB4A /* Bank_Logo_60.png */; };
-		0F815DD319EC74CD0078BB4A /* Bank_Logo_76.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F815DC319EC74CD0078BB4A /* Bank_Logo_76.png */; };
-		0F815DD419EC74CD0078BB4A /* Bank_Logo_80.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F815DC419EC74CD0078BB4A /* Bank_Logo_80.png */; };
-		0F815DD519EC74CD0078BB4A /* Bank_Logo_120.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F815DC519EC74CD0078BB4A /* Bank_Logo_120.png */; };
-		0F815DD619EC74CD0078BB4A /* Bank_Logo_152.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F815DC619EC74CD0078BB4A /* Bank_Logo_152.png */; };
-		0F815DD719EC74CD0078BB4A /* Bank_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F815DC719EC74CD0078BB4A /* Bank_Logo.png */; };
-		0F815DD819EC74CD0078BB4A /* Bank_Logo@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F815DC819EC74CD0078BB4A /* Bank_Logo@1x.png */; };
-		0F815DD919EC74CD0078BB4A /* Bank_Logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F815DC919EC74CD0078BB4A /* Bank_Logo@2x.png */; };
-		0F815DDA19EC74CD0078BB4A /* en_US_Bank_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F815DCA19EC74CD0078BB4A /* en_US_Bank_Logo.png */; };
-		0F815DDB19EC74CD0078BB4A /* Icon_Tab.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F815DCB19EC74CD0078BB4A /* Icon_Tab.png */; };
-		0F815DDC19EC74CD0078BB4A /* Icon_Tab@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F815DCC19EC74CD0078BB4A /* Icon_Tab@2x.png */; };
-		0F815DDD19EC74CD0078BB4A /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F815DCD19EC74CD0078BB4A /* lock.png */; };
-		0F815DDE19EC74CD0078BB4A /* lock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F815DCE19EC74CD0078BB4A /* lock@2x.png */; };
 		0F815DE219EC766E0078BB4A /* KeeperTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815DE119EC766E0078BB4A /* KeeperTableViewCell.swift */; };
 		0F815DE319EC766E0078BB4A /* KeeperTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815DE119EC766E0078BB4A /* KeeperTableViewCell.swift */; };
 		0F815DE519EC76940078BB4A /* SignupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F815DE419EC76940078BB4A /* SignupTableViewController.swift */; };
@@ -52,16 +36,11 @@
 		324A025419CCD83F00D2E07A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324A025319CCD83F00D2E07A /* Images.xcassets */; };
 		324A025719CCD83F00D2E07A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 324A025519CCD83F00D2E07A /* LaunchScreen.xib */; };
 		324A026319CCD83F00D2E07A /* My_Bank_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 324A026219CCD83F00D2E07A /* My_Bank_AppTests.m */; };
-		3257262B19D1E17C000F17E7 /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 3257262919D1E17C000F17E7 /* lock.png */; };
-		3257262C19D1E17C000F17E7 /* lock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3257262A19D1E17C000F17E7 /* lock@2x.png */; };
-		3257262F19D2017C000F17E7 /* Bank_Logo@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3257262D19D2017C000F17E7 /* Bank_Logo@1x.png */; };
-		3257263019D2017C000F17E7 /* Icon_Tab.png in Resources */ = {isa = PBXBuildFile; fileRef = 3257262E19D2017C000F17E7 /* Icon_Tab.png */; };
 		3257263319D20528000F17E7 /* SignupTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3257263219D20528000F17E7 /* SignupTableViewController.m */; };
 		3257263919D21E20000F17E7 /* KeeperTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3257263819D21E20000F17E7 /* KeeperTableViewCell.m */; };
 		3257263C19D21F31000F17E7 /* ChangePasswordTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3257263B19D21F31000F17E7 /* ChangePasswordTableViewController.m */; };
 		3257263F19D2392E000F17E7 /* AccountInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3257263E19D2392E000F17E7 /* AccountInformation.m */; };
 		3257264219D23E5E000F17E7 /* AccountTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3257264119D23E5E000F17E7 /* AccountTableViewController.m */; };
-		32944F0119D38C5200E02114 /* en_US_Bank_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 32944F0019D38C5200E02114 /* en_US_Bank_Logo.png */; };
 		32944F0B19D3914300E02114 /* KeeperExtensionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32944F0A19D3914300E02114 /* KeeperExtensionSDK.framework */; };
 		32944F0C19D3914300E02114 /* KeeperExtensionSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32944F0A19D3914300E02114 /* KeeperExtensionSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		32944F0E19D3934700E02114 /* Keeper.images in Resources */ = {isa = PBXBuildFile; fileRef = 32944F0D19D3934700E02114 /* Keeper.images */; };
@@ -120,22 +99,6 @@
 		0F815DAD19EC74A30078BB4A /* My Bank App SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My Bank App SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F815DB219EC74A30078BB4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F815DB319EC74A30078BB4A /* My_Bank_App_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_Bank_App_SwiftTests.swift; sourceTree = "<group>"; };
-		0F815DBF19EC74CD0078BB4A /* Bank_Logo_29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bank_Logo_29.png; sourceTree = "<group>"; };
-		0F815DC019EC74CD0078BB4A /* Bank_Logo_40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bank_Logo_40.png; sourceTree = "<group>"; };
-		0F815DC119EC74CD0078BB4A /* Bank_Logo_58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bank_Logo_58.png; sourceTree = "<group>"; };
-		0F815DC219EC74CD0078BB4A /* Bank_Logo_60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bank_Logo_60.png; sourceTree = "<group>"; };
-		0F815DC319EC74CD0078BB4A /* Bank_Logo_76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bank_Logo_76.png; sourceTree = "<group>"; };
-		0F815DC419EC74CD0078BB4A /* Bank_Logo_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bank_Logo_80.png; sourceTree = "<group>"; };
-		0F815DC519EC74CD0078BB4A /* Bank_Logo_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bank_Logo_120.png; sourceTree = "<group>"; };
-		0F815DC619EC74CD0078BB4A /* Bank_Logo_152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bank_Logo_152.png; sourceTree = "<group>"; };
-		0F815DC719EC74CD0078BB4A /* Bank_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bank_Logo.png; sourceTree = "<group>"; };
-		0F815DC819EC74CD0078BB4A /* Bank_Logo@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bank_Logo@1x.png"; sourceTree = "<group>"; };
-		0F815DC919EC74CD0078BB4A /* Bank_Logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bank_Logo@2x.png"; sourceTree = "<group>"; };
-		0F815DCA19EC74CD0078BB4A /* en_US_Bank_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = en_US_Bank_Logo.png; sourceTree = "<group>"; };
-		0F815DCB19EC74CD0078BB4A /* Icon_Tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_Tab.png; sourceTree = "<group>"; };
-		0F815DCC19EC74CD0078BB4A /* Icon_Tab@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_Tab@2x.png"; sourceTree = "<group>"; };
-		0F815DCD19EC74CD0078BB4A /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock.png; sourceTree = "<group>"; };
-		0F815DCE19EC74CD0078BB4A /* lock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lock@2x.png"; sourceTree = "<group>"; };
 		0F815DE119EC766E0078BB4A /* KeeperTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeeperTableViewCell.swift; sourceTree = "<group>"; };
 		0F815DE419EC76940078BB4A /* SignupTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupTableViewController.swift; sourceTree = "<group>"; };
 		0F815DE719EC76A70078BB4A /* ChangePasswordTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordTableViewController.swift; sourceTree = "<group>"; };
@@ -155,10 +118,6 @@
 		324A025C19CCD83F00D2E07A /* My Bank AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My Bank AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		324A026119CCD83F00D2E07A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		324A026219CCD83F00D2E07A /* My_Bank_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = My_Bank_AppTests.m; sourceTree = "<group>"; };
-		3257262919D1E17C000F17E7 /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lock.png; path = Images/lock.png; sourceTree = "<group>"; };
-		3257262A19D1E17C000F17E7 /* lock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lock@2x.png"; path = "Images/lock@2x.png"; sourceTree = "<group>"; };
-		3257262D19D2017C000F17E7 /* Bank_Logo@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Bank_Logo@1x.png"; path = "Images/Bank_Logo@1x.png"; sourceTree = "<group>"; };
-		3257262E19D2017C000F17E7 /* Icon_Tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon_Tab.png; path = Images/Icon_Tab.png; sourceTree = "<group>"; };
 		3257263119D20528000F17E7 /* SignupTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupTableViewController.h; sourceTree = "<group>"; };
 		3257263219D20528000F17E7 /* SignupTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupTableViewController.m; sourceTree = "<group>"; };
 		3257263719D21E20000F17E7 /* KeeperTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeeperTableViewCell.h; sourceTree = "<group>"; };
@@ -169,7 +128,6 @@
 		3257263E19D2392E000F17E7 /* AccountInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountInformation.m; sourceTree = "<group>"; };
 		3257264019D23E5E000F17E7 /* AccountTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountTableViewController.h; sourceTree = "<group>"; };
 		3257264119D23E5E000F17E7 /* AccountTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountTableViewController.m; sourceTree = "<group>"; };
-		32944F0019D38C5200E02114 /* en_US_Bank_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en_US_Bank_Logo.png; path = Images/en_US_Bank_Logo.png; sourceTree = "<group>"; };
 		32944F0A19D3914300E02114 /* KeeperExtensionSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KeeperExtensionSDK.framework; sourceTree = "<group>"; };
 		32944F0D19D3934700E02114 /* Keeper.images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Keeper.images; sourceTree = "<group>"; };
 		32944F1019D4865A00E02114 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
@@ -215,7 +173,6 @@
 		0F815D9A19EC74A30078BB4A /* My Bank App Swift */ = {
 			isa = PBXGroup;
 			children = (
-				0F815DBE19EC74B90078BB4A /* images */,
 				0F815DE119EC766E0078BB4A /* KeeperTableViewCell.swift */,
 				0F815D9D19EC74A30078BB4A /* AppDelegate.swift */,
 				0F815D9F19EC74A30078BB4A /* ViewController.swift */,
@@ -224,9 +181,9 @@
 				0F815DEA19EC76C00078BB4A /* AccountInformation.swift */,
 				0F815DED19EC76D50078BB4A /* AccountTableViewController.swift */,
 				0F815DF019EC77060078BB4A /* KeeperLockActionDelegate.swift */,
-				0F69420019EC9C6E00E0560E /* Main.storyboard */,
 				0F5DE7BF19EDB8D600F89DF9 /* KeeperExtensionSDK.framework */,
 				0F815DA419EC74A30078BB4A /* Images.xcassets */,
+				0F69420019EC9C6E00E0560E /* Main.storyboard */,
 				0F815DA619EC74A30078BB4A /* LaunchScreen.xib */,
 				0F815D9B19EC74A30078BB4A /* Supporting Files */,
 			);
@@ -258,29 +215,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0F815DBE19EC74B90078BB4A /* images */ = {
-			isa = PBXGroup;
-			children = (
-				0F815DBF19EC74CD0078BB4A /* Bank_Logo_29.png */,
-				0F815DC019EC74CD0078BB4A /* Bank_Logo_40.png */,
-				0F815DC119EC74CD0078BB4A /* Bank_Logo_58.png */,
-				0F815DC219EC74CD0078BB4A /* Bank_Logo_60.png */,
-				0F815DC319EC74CD0078BB4A /* Bank_Logo_76.png */,
-				0F815DC419EC74CD0078BB4A /* Bank_Logo_80.png */,
-				0F815DC519EC74CD0078BB4A /* Bank_Logo_120.png */,
-				0F815DC619EC74CD0078BB4A /* Bank_Logo_152.png */,
-				0F815DC719EC74CD0078BB4A /* Bank_Logo.png */,
-				0F815DC819EC74CD0078BB4A /* Bank_Logo@1x.png */,
-				0F815DC919EC74CD0078BB4A /* Bank_Logo@2x.png */,
-				0F815DCA19EC74CD0078BB4A /* en_US_Bank_Logo.png */,
-				0F815DCB19EC74CD0078BB4A /* Icon_Tab.png */,
-				0F815DCC19EC74CD0078BB4A /* Icon_Tab@2x.png */,
-				0F815DCD19EC74CD0078BB4A /* lock.png */,
-				0F815DCE19EC74CD0078BB4A /* lock@2x.png */,
-			);
-			name = images;
-			sourceTree = "<group>";
-		};
 		324A023A19CCD83F00D2E07A = {
 			isa = PBXGroup;
 			children = (
@@ -310,7 +244,6 @@
 				32944F1219D48C9100E02114 /* README.md */,
 				32944F1019D4865A00E02114 /* Prefix.pch */,
 				32944F0D19D3934700E02114 /* Keeper.images */,
-				324A026C19CCDBC600D2E07A /* Images */,
 				324A024619CCD83F00D2E07A /* Supporting Files */,
 				3257263719D21E20000F17E7 /* KeeperTableViewCell.h */,
 				3257263819D21E20000F17E7 /* KeeperTableViewCell.m */,
@@ -318,9 +251,6 @@
 				324A024B19CCD83F00D2E07A /* AppDelegate.m */,
 				324A024D19CCD83F00D2E07A /* ViewController.h */,
 				324A024E19CCD83F00D2E07A /* ViewController.m */,
-				324A025019CCD83F00D2E07A /* Main.storyboard */,
-				324A025319CCD83F00D2E07A /* Images.xcassets */,
-				324A025519CCD83F00D2E07A /* LaunchScreen.xib */,
 				3257263119D20528000F17E7 /* SignupTableViewController.h */,
 				3257263219D20528000F17E7 /* SignupTableViewController.m */,
 				3257263A19D21F31000F17E7 /* ChangePasswordTableViewController.h */,
@@ -330,6 +260,9 @@
 				3257264019D23E5E000F17E7 /* AccountTableViewController.h */,
 				3257264119D23E5E000F17E7 /* AccountTableViewController.m */,
 				32944F1119D48BEF00E02114 /* KeeperLockActionDelegate.h */,
+				324A025319CCD83F00D2E07A /* Images.xcassets */,
+				324A025019CCD83F00D2E07A /* Main.storyboard */,
+				324A025519CCD83F00D2E07A /* LaunchScreen.xib */,
 			);
 			path = "My Bank App";
 			sourceTree = "<group>";
@@ -358,18 +291,6 @@
 				324A026119CCD83F00D2E07A /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		324A026C19CCDBC600D2E07A /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				32944F0019D38C5200E02114 /* en_US_Bank_Logo.png */,
-				3257262D19D2017C000F17E7 /* Bank_Logo@1x.png */,
-				3257262E19D2017C000F17E7 /* Icon_Tab.png */,
-				3257262919D1E17C000F17E7 /* lock.png */,
-				3257262A19D1E17C000F17E7 /* lock@2x.png */,
-			);
-			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -499,25 +420,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F815DD419EC74CD0078BB4A /* Bank_Logo_80.png in Resources */,
-				0F815DDD19EC74CD0078BB4A /* lock.png in Resources */,
-				0F815DCF19EC74CD0078BB4A /* Bank_Logo_29.png in Resources */,
-				0F815DD219EC74CD0078BB4A /* Bank_Logo_60.png in Resources */,
-				0F815DD719EC74CD0078BB4A /* Bank_Logo.png in Resources */,
-				0F815DD319EC74CD0078BB4A /* Bank_Logo_76.png in Resources */,
-				0F815DDA19EC74CD0078BB4A /* en_US_Bank_Logo.png in Resources */,
 				0F815DA819EC74A30078BB4A /* LaunchScreen.xib in Resources */,
-				0F815DD919EC74CD0078BB4A /* Bank_Logo@2x.png in Resources */,
-				0F815DD619EC74CD0078BB4A /* Bank_Logo_152.png in Resources */,
-				0F815DD519EC74CD0078BB4A /* Bank_Logo_120.png in Resources */,
-				0F815DD119EC74CD0078BB4A /* Bank_Logo_58.png in Resources */,
-				0F815DD019EC74CD0078BB4A /* Bank_Logo_40.png in Resources */,
 				0F815DA519EC74A30078BB4A /* Images.xcassets in Resources */,
-				0F815DDB19EC74CD0078BB4A /* Icon_Tab.png in Resources */,
-				0F815DDC19EC74CD0078BB4A /* Icon_Tab@2x.png in Resources */,
-				0F815DD819EC74CD0078BB4A /* Bank_Logo@1x.png in Resources */,
 				0F69420119EC9C6E00E0560E /* Main.storyboard in Resources */,
-				0F815DDE19EC74CD0078BB4A /* lock@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,14 +438,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				324A025219CCD83F00D2E07A /* Main.storyboard in Resources */,
-				3257262C19D1E17C000F17E7 /* lock@2x.png in Resources */,
-				3257262F19D2017C000F17E7 /* Bank_Logo@1x.png in Resources */,
-				32944F0119D38C5200E02114 /* en_US_Bank_Logo.png in Resources */,
-				3257262B19D1E17C000F17E7 /* lock.png in Resources */,
 				32944F0E19D3934700E02114 /* Keeper.images in Resources */,
 				324A025719CCD83F00D2E07A /* LaunchScreen.xib in Resources */,
 				324A025419CCD83F00D2E07A /* Images.xcassets in Resources */,
-				3257263019D2017C000F17E7 /* Icon_Tab.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
