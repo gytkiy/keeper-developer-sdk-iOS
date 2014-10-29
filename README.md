@@ -1,6 +1,6 @@
 # Keeper FastFill Developer SDK for iOS
 
-Keeper is the world's most secure password manager and digital file vault, with over 6 million users across 80 countries.  
+Keeper is the world's most secure password manager and digital file vault, with over 5 million users across 80 countries.  
 
 The Keeper SDK for iOS is a simple and powerful way for you to incorporate Keeper's secure login and registration technology into your iOS app.  With just a few taps, your users can either register an account with your service, or login to an existing account with their Keeper vault.
 
@@ -22,7 +22,7 @@ In this case, the user wants to sign up with your service using their Keeper vau
 
 ## Developer Setup Instructions
 
-1.  Install Keeper from the app store on your device.
+1.  Install Keeper from the [App Store](https://itunes.apple.com/us/app/keeper-password-manager-digital/id287170072?mt=8) on your device.
 2.  Clone our [Github repo](https://github.com/Keeper-Security/keeper-developer-sdk-iOS).
 3.  Add the KeeperExtensionSDK.framework library to your project.
 
@@ -34,10 +34,9 @@ Keeper is the most secure platform for your users to create accounts and login w
 
 ## Contact Us
 
-To contact our developer team, email us at ops@keepersecurity.com. For more information about Keeper, visit our website at [https://keepersecurity.com](https://keepersecurity.com).
+To contact our engineering operations team, email us at ops@keepersecurity.com. For more information about Keeper, visit our website at [https://keepersecurity.com](https://keepersecurity.com).
 
-## Copyright
-
+<hr>
 Copyright © 2014 Keeper Security, Inc.
 U.S. Patent No. 8,868,932, 8,656,504 and 8,738,934
 Patents Pending
