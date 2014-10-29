@@ -37,6 +37,6 @@ Keeper is the most secure platform for your users to create accounts and login w
 To contact our engineering operations team, email us at ops@keepersecurity.com. For more information about Keeper, visit our website at [https://keepersecurity.com](https://keepersecurity.com).
 
 <hr>
-Copyright © 2014 Keeper Security, Inc.
-U.S. Patent No. 8,868,932, 8,656,504 and 8,738,934
+Copyright © 2014 Keeper Security, Inc.<br>
+U.S. Patent No. 8,868,932, 8,656,504 and 8,738,934<br>
 Patents Pending
