@@ -9,7 +9,7 @@ The Keeper SDK for iOS is a simple and powerful way for you to incorporate Keepe
 In this case, the user already has a login and password for your service stored in their Keeper vault.
 
 * User taps on the Keeper lock from your app login screen
-* User authenticates with Keeper with Touch ID
+* User authenticates with Keeper using Touch ID or Master Password.
 * User taps on "Fill & Save" to login to your app.
 
 ## Scenario 2: Create a New Account
@@ -17,7 +17,7 @@ In this case, the user already has a login and password for your service stored 
 In this case, the user wants to sign up with your service using their Keeper vault.
 
 * User taps on the Keeper lock from your signup screen
-* User authenticates with Keeper with Touch ID
+* User authenticates with Keeper using Touch ID or Master Password. 
 * User generates a strong password and taps "Fill & Save".
 
 ## Developer Setup Instructions
