@@ -3,7 +3,7 @@
 //  KeeperExtensionSDK
 //
 //  Created by Arthur Walasek on 9/24/14.
-//  Copyright (c) 2014 Callpod, Inc. All rights reserved.
+//  Copyright (c) 2014 Keeper Security, Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

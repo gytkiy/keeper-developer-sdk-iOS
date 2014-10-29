@@ -3,7 +3,7 @@
 //  My Bank App
 //
 //  Created by Arthur Walasek on 9/25/14.
-//  Copyright (c) 2014 Callpod, Inc. All rights reserved.
+//  Copyright (c) Keeper Security Inc. All rights reserved.
 //
 
 #ifndef My_Bank_App_KeeperLockActionDelegate_h

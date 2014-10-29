@@ -3,7 +3,7 @@
 //  My Bank App SwiftTests
 //
 //  Created by Jesse Gatt on 10/13/14.
-//  Copyright (c) 2014 Callpod, Inc. All rights reserved.
+//  Copyright (c) Keeper Security Inc. All rights reserved.
 //
 
 import UIKit

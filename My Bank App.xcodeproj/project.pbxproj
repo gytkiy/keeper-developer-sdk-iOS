@@ -375,7 +375,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0600;
-				ORGANIZATIONNAME = "Callpod, Inc.";
+				ORGANIZATIONNAME = "Keeper Security, Inc.";
 				TargetAttributes = {
 					0F815D9819EC74A30078BB4A = {
 						CreatedOnToolsVersion = 6.1;
