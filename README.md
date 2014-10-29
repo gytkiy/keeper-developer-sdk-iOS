@@ -12,6 +12,8 @@ In this case, the user already has a login and password for your service stored 
 * User authenticates with Keeper using Touch ID or Master Password.
 * User taps on "Fill & Save" to login to your app.
 
+<img src="http://keepersdk.s3.amazonaws.com/scenario1.png"/>
+
 ## Scenario 2: Create a New Account
 
 In this case, the user wants to sign up with your service using their Keeper vault.
@@ -19,6 +21,8 @@ In this case, the user wants to sign up with your service using their Keeper vau
 * User taps on the Keeper lock from your signup screen
 * User authenticates with Keeper using Touch ID or Master Password. 
 * User generates a strong password and taps "Fill & Save".
+
+<img src="http://keepersdk.s3.amazonaws.com/scenario2.png"/>
 
 ## Developer Setup Instructions
 
